@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.login-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.login-button.fade {
+  opacity: 0;
+}
+
+.login-button:focus {
+  outline: none;
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}
